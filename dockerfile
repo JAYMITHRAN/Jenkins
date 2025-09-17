@@ -8,6 +8,8 @@ WORKDIR /usr/src/app/Calculator
 
 COPY package*\.json ./
 
+RUN npm i
+
 RUN npm run build
 
 FROM nginx:stable-alpine
